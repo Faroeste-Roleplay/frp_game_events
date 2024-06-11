@@ -2831,9 +2831,8 @@ local eventData = {
         eventGroup = 0,
         eventDataSize = 2,
         dataElements = {
-            [0] = "whistler ped id",
-            [1] =
-            "whistle type ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/aud_ped_whistle_types.lua))"
+            [0] = "pedId",
+            [1] = "whistleType"
         }
     },
     {
@@ -2926,9 +2925,9 @@ local eventData = {
         eventGroup = 0,
         eventDataSize = 10,
         dataElements = {
-            [0] = "prompt type id ( [list](#prompt-type-ids) )",
+            [0] = "playerPromptType",
             [1] = "unknown",
-            [2] = "target entity id",
+            [2] = "interactedEntityId",
             [3] = "unknown (??? discovered inventory item)",
             [4] = "unknown",
             [5] = "unknown",
