@@ -74,7 +74,7 @@ local eventHashes = {
         name = "EVENT_CRIME_CONFIRMED",
     },
     {
-        hash = -830063453,
+        hash = 3464903843,
         name = "EVENT_CRIME_REPORTED",
     },
     {
@@ -142,8 +142,12 @@ local eventHashes = {
         name = "EVENT_INJURED_OWNER",
     },
     {
-        hash = -1498867790,
+        hash = 2796099506,
         name = "EVENT_CRIME_CRY_FOR_HELP",
+    },
+    {
+        hash = 1190727272,
+        name = "EVENT_SHOCKING_CRIME_SCENE",
     },
     {
         hash = 871686291,
@@ -322,11 +326,11 @@ local eventHashes = {
         name = "EVENT_SHOT_FIRED",
     },
     {
-        hash = -412084084,
+        hash = 3882883212,
         name = "EVENT_CRIME_WITNESSED",
     },
     {
-        hash = -1011311845,
+        hash = 3283655451,
         name = "EVENT_POTENTIAL_CRIME",
     },
     {
@@ -1572,9 +1576,52 @@ local eventData = {
         eventGroup = 0,
         eventDataSize = 3,
         dataElements = {
-            [0] =
-            "crime type hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/crime_types.lua) )",
-            [1] = "criminal ped id",
+            [0] = "crimeTypeHash",
+            [1] = "criminalPedId",
+            [2] = "witness",
+            [3] = "unk1",
+            [4] = "unk2",
+            [5] = "unk3",
+            [6] = "unk4",
+        }
+    },
+    {
+        eventName = "EVENT_CRIME_REPORTED",
+        eventGroup = 0,
+        eventDataSize = 3,
+        dataElements = {
+            [0] = "crimeTypeHash",
+            [1] = "criminalPedId",
+            [2] = "witness"
+        }
+    },
+    {
+        eventName = "EVENT_CRIME_CRY_FOR_HELP",
+        eventGroup = 0,
+        eventDataSize = 3,
+        dataElements = {
+            [0] = "crimeTypeHash",
+            [1] = "criminalPedId",
+            [2] = "witness"
+        }
+    },
+    {
+        eventName = "EVENT_CRIME_WITNESSED",
+        eventGroup = 0,
+        eventDataSize = 3,
+        dataElements = {
+            [0] = "crimeTypeHash",
+            [1] = "criminalPedId",
+            [2] = "witness"
+        }
+    },
+    {
+        eventName = "EVENT_POTENTIAL_CRIME",
+        eventGroup = 0,
+        eventDataSize = 3,
+        dataElements = {
+            [0] = "crimeTypeHash",
+            [1] = "criminalPedId",
             [2] = "witness"
         }
     },
