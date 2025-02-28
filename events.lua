@@ -1479,9 +1479,9 @@ local eventData = {
         eventGroup = 0,
         eventDataSize = 4,
         dataElements = {
-            [0] = "calmer ped id",
-            [1] = "mount ped id",
-            [2] = "CalmTypeId ( [list](#calm-type-ids) )",
+            [0] = "calmerPedId",
+            [1] = "mountPedId",
+            [2] = "CalmTypeId",
             [3] = "isFullyCalmed"
         }
     },
@@ -1502,10 +1502,10 @@ local eventData = {
         eventGroup = 0,
         eventDataSize = 6,
         dataElements = {
-            [0] = "CarriableEntityId",
-            [1] = "carry action id ( [list](#carry-action-ids) )",
+            [0] = "carriableEntity",
+            [1] = "carryAction",
             [2] = "unknown",
-            [3] = "vehicle entity id (parent id)",
+            [3] = "targetParentEntity",
             [4] = "unknown",
             [5] = "unknown"
         }
@@ -1516,8 +1516,8 @@ local eventData = {
         eventDataSize = 5,
         dataElements = {
             [0] = "unknown",
-            [1] = "carriable entity id",
-            [2] = "vehicle entity id",
+            [1] = "carriableEntityId",
+            [2] = "vehicleEntityId",
             [3] = "unknown",
             [4] = "unknown"
         }
@@ -1525,11 +1525,12 @@ local eventData = {
     {
         eventName = "EVENT_CARRIABLE_VEHICLE_STOW_COMPLETE",
         eventGroup = 0,
-        eventDataSize = 3,
+        eventDataSize = 4,
         dataElements = {
-            [0] = "unknown",
-            [1] = "vehicle entity id",
-            [2] = "isItemToAddCancelled"
+            [0] = "stowerEntity",
+            [1] = "vehicleEntityId",
+            [2] = "unknown",
+            [3] = "isItemToAddCancelled",
         }
     },
     {
@@ -1845,7 +1846,7 @@ local eventData = {
         eventDataSize = 3,
         dataElements = {
             [0] = "looterId",
-            [1] = "Looted entity id",
+            [1] = "lootedEntityId",
             [2] = "isLootSuccess"
         }
     },
@@ -2826,9 +2827,9 @@ local eventData = {
         eventGroup = 0,
         eventDataSize = 10,
         dataElements = {
-            [0] = "ped id",
-            [1] = "interaction entity id ",
-            [2] = "inventory item hash",
+            [0] = "ped",
+            [1] = "interactionEntityId",
+            [2] = "inventoryItemHash",
             [3] = "inventory item quantity",
             [4] = "unknown",
             [5] = "unknown",
@@ -2999,8 +3000,8 @@ local eventData = {
         eventGroup = 0,
         eventDataSize = 3,
         dataElements = {
-            [0] = "VictimEntityId",
-            [1] = "reviver ped id",
+            [0] = "victimEntityId",
+            [1] = "reviverEntityId",
             [2] = "used inventory item hash"
         }
     },
